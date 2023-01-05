@@ -11,7 +11,6 @@ rel="stylesheet"
 integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
 crossorigin="anonymous">
 <style type="text/css">
-
 .btn{
 border-radius: 5em;
 }
@@ -25,43 +24,41 @@ min-width: 576px;
 max-width: 100%;
 }
 hr {
-        position: relative;
-        border: none;
-        height: 22px;
-        background: black;
-    }
-    .spec{
-      color: #20B2AA;
-      font-size: 22px;
-    }
-
-    .jpg-thumbnail {
-      filter: grayscale(2);
-      border-radius: 12px;
-      border-style: ridge;
-      border-color: black;
-      border-width: 3px;
-       cursor: pointer;
-      -webkit-transition-property: all;
-      -webkit-transition-duration: 0.3s;
-      -webkit-transition-timing-function: ease;
-    }
-    .jpg-thumbnail:hover {
-      border-radius:12px;
-      border-style: ridge;
-      border-color: black;
-      border-width: 3px;
-      cursor: zoom-in;
-      object-position: center;
-      filter: none;
-    }
+position: relative;
+border: none;
+height: 22px;
+background: black;
+ }
+.spec{
+color: #20B2AA;
+font-size: 22px;
+ }
+.jpg-thumbnail {
+filter: grayscale(2);
+border-radius: 12px;
+border-style: ridge;
+border-color: black;
+border-width: 3px;
+cursor: pointer;
+-webkit-transition-property: all;
+-webkit-transition-duration: 0.3s;
+-webkit-transition-timing-function: ease;
+}
+.jpg-thumbnail:hover {
+border-radius:12px;
+border-style: ridge;
+border-color: black;
+border-width: 3px;
+cursor: zoom-in;
+object-position: center;
+filter: none;
+}
 </style>
 <title>Huiswerk les 22</title>
 </head>
-
 <body class="d-flex h-100 text-center text-white bg-secondary">
-  <!-- Wrapper container -->
-  <div class="container-fluid">
+<!-- Wrapper container -->
+<div class="container-fluid">
 <div class="cover-container-row-col row d-flex p-4 mx-auto flex-column">
 <header class="mb-auto">
 <div>
@@ -74,14 +71,13 @@ hr {
 </nav>
 </div>
 </header>
-
 <main class="px-3">
 <hr class="text-black-50">
 <p class="float-md-center"></p>
-  <h5>Welkom op de site</h5>
+<h5>Welkom op de site</h5>
 <div class="container-fluid">
-  <div class="row gy-1 row-cols-3-px-1">
-    <div class="col">
+<div class="row gy-1 row-cols-3-px-1">
+<div class="col">
 <img
 src="fotoA.jpg"
 onclick="onClick(this)"
@@ -160,27 +156,23 @@ width="290" height="190">
 <p></p>
 <br>
 </main>
-
 <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-  <div class="w3-modal-content w3-animate-zoom">
-    <img id="img01" style="width:100%">
-  </div>
+<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+<div class="w3-modal-content w3-animate-zoom">
+<img id="img01" style="width:100%">
 </div>
-
+</div>
 <hr class="text-black-50">
 <footer class="mt-auto h-200 text-black-50">
 <p class="float-md-end">© M. Uiterwijk</p>
 </footer>
 </div>
-</div>
-</div>
 <div>
 </div>
 <script>
 function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "inline";
+document.getElementById("img01").src = element.src;
+document.getElementById("modal01").style.display = "inline";
 }
 </script>
 <script
